@@ -6,9 +6,9 @@ app.use(cors());
 app.use( express.json() );
 
 //Rutas
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/notes', require('./routes/notes'));
-app.use('/api/uploads', require('./routes/uploads'));
+app.use('/api', require('./routes/crud.routes'));
+// app.use('/api/notes', require('./routes/notes'));
+// app.use('/api/uploads', require('./routes/uploads'));
 
 
 app.listen(port, () => {
